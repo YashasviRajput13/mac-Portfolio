@@ -8,8 +8,8 @@ const websites: WebsitesData = {
         id: "my-website",
         title: "Portfolio",
         img: "img/ui/avatar.jpg",
-        link: "https://github.com/YashasviRajput13",
-        inner: true
+        link: "https://yashasvi-portfolio-tawny.vercel.app/",
+        inner: false
       },
       {
         id: "my-github",
@@ -18,10 +18,28 @@ const websites: WebsitesData = {
         link: "https://github.com/YashasviRajput13"
       },
       {
-        id: "my-linkedin",
-        title: "Linkedin",
+        id: "my-linkedin-profile",
+        title: "LinkedIn",
         img: "img/sites/linkedin.svg",
         link: "https://www.linkedin.com/in/yashasvi-s-rajput-492154319"
+      },
+      {
+        id: "my-instagram",
+        title: "Instagram",
+        img: "img/sites/instagram.svg",
+        link: "https://www.instagram.com/"
+      },
+      {
+        id: "my-youtube",
+        title: "YouTube",
+        img: "img/sites/youtube.svg",
+        link: "https://www.youtube.com/"
+      },
+      {
+        id: "my-telegram",
+        title: "Telegram",
+        img: "img/sites/telegram.svg",
+        link: "https://web.telegram.org/"
       },
       {
         id: "my-email",

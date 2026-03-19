@@ -1,5 +1,12 @@
 import { appBarHeight } from "~/utils";
 import type { AppsData } from "~/types";
+import Bear from "~/components/apps/Bear";
+import Typora from "~/components/apps/Typora";
+import Safari from "~/components/apps/Safari";
+import VSCode from "~/components/apps/VSCode";
+import FaceTime from "~/components/apps/FaceTime";
+import Terminal from "~/components/apps/Terminal";
+import Spotify from "~/components/apps/Spotify";
 
 const apps: AppsData[] = [
   {
@@ -71,6 +78,19 @@ const apps: AppsData[] = [
     desktop: true,
     img: "img/icons/terminal.png",
     content: <Terminal />
+  },
+  {
+    id: "spotify",
+    title: "Spotify",
+    desktop: true,
+    width: 400,
+    height: 600,
+    minWidth: 350,
+    minHeight: 500,
+    x: 120,
+    y: -50,
+    img: "img/icons/spotify-fixed.svg",
+    content: <Spotify />
   },
   {
     id: "github",

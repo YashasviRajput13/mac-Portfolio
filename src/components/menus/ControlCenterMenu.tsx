@@ -1,7 +1,8 @@
-import React from "react";
-import Slider from "react-rangeslider";
-import "react-rangeslider/lib/index.css";
+import React, { useRef } from "react";
+import Slider from "react-slider";
 import { music } from "~/configs";
+import { useStore } from "~/stores";
+import { useClickOutside } from "~/hooks";
 
 interface SliderProps {
   icon: string;
@@ -15,10 +16,10 @@ const SliderComponent = ({ icon, value, setValue }: SliderProps) => (
       <span className={icon} text="xs c-500" />
     </div>
     <Slider
+      className="flex-1"
       min={1}
       max={100}
       value={value}
-      tooltip={false}
       orientation="horizontal"
       onChange={(v: number) => setValue(v)}
     />

@@ -32,24 +32,25 @@ const NavSection = ({ width, section, setGoURL }: NavSectionProps) => {
       <div className={`mt-3 grid grid-flow-row ${grid}`}>
         {section.sites.map((site: SiteData) => (
           <div key={`safari-nav-${site.id}`} className="h-28 flex flex-col">
-            <div className="size-16 mx-auto rounded-md overflow-hidden bg-white">
+            <div className="w-16 h-16 mx-auto rounded-md overflow-hidden bg-white flex items-center justify-center">
               {site.img ? (
                 <img
                   src={site.img}
-                  alt={site.title}
-                  title={site.title}
+                  alt={site.title || ""}
+                  title={site.title || ""}
+                  className="w-full h-full object-cover"
                   onClick={
                     site.inner ? () => setGoURL(site.link) : () => window.open(site.link)
                   }
                 />
               ) : (
                 <div
-                  className="size-full flex-center cursor-default text-black"
+                  className="w-full h-full flex items-center justify-center cursor-default text-black"
                   onClick={
                     site.inner ? () => setGoURL(site.link) : () => window.open(site.link)
                   }
                 >
-                  <span text-lg>{site.title}</span>
+                  <span text-lg>{site.title || ""}</span>
                 </div>
               )}
             </div>

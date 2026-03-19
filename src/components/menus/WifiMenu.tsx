@@ -1,5 +1,6 @@
-import React from "react";
-import "react-rangeslider/lib/index.css";
+import React, { useRef } from "react";
+import { useStore } from "~/stores";
+import { useClickOutside } from "~/hooks";
 
 interface WifiMenuProps {
   toggleWifiMenu: () => void;

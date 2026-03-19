@@ -114,7 +114,8 @@ export default function DockItem({
             alt={title}
             title={title}
             draggable={false}
-            style={winWidth < 640 ? {} : { width, willChange: "width" }}
+            className="object-contain"
+            style={winWidth < 640 ? {} : { width, height: width, willChange: "width" }}
           />
         </a>
       ) : (
@@ -124,7 +125,8 @@ export default function DockItem({
           alt={title}
           title={title}
           draggable={false}
-          style={winWidth < 640 ? {} : { width, willChange: "width" }}
+          className="object-contain"
+          style={winWidth < 640 ? {} : { width, height: width, willChange: "width" }}
         />
       )}
       <div
